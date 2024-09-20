@@ -18,10 +18,13 @@ that the user can enter the number of gallons and the miles driven.
 using namespace std;
 int main()
 {
-    int gallons = 15;
-    int miles = 375;
+    int gallons;
+    int miles;
     double mpg;
-
+    cout << "How many miles have you driven?";
+    cin >> miles;
+    cout << "How many galons of gas have you used?";
+    cin >> gallons;
     mpg = miles / gallons;
 
     cout << "Your MPG rate is: " << mpg << " miles per gallon";
